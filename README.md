@@ -12,7 +12,7 @@ Este é um jogo de xadrez desenvolvido para ser executado no prompt de comando. 
 
 ## Requisitos
 - Sistema operacional Windows/Linux/MacOS.
-- Python 3.6 ou superior (ou a linguagem que você utilizou).
+- .NET Core 3.1 ou superior.
 
 ## Como Jogar
 1. Clone este repositório:
