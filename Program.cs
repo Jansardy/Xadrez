@@ -2,7 +2,7 @@
 using tabuleiro;
 using xadrez;
 
-namespace Xadrez
+namespace xadrez_console
 {
     class Program
     {
@@ -15,6 +15,7 @@ namespace Xadrez
 
                 while (!partida.terminada)
                 {
+
                     try
                     {
                         Console.Clear();
@@ -25,10 +26,10 @@ namespace Xadrez
                         Posicao origem = Tela.lerPosicaoXadrez().toPosicao();
                         partida.validarPosicaoDeOrigem(origem);
 
-                        bool[,] posicoesPossives = partida.tab.peca(origem).movimentosPossiveis();
+                        bool[,] posicoesPossiveis = partida.tab.peca(origem).movimentosPossiveis();
 
                         Console.Clear();
-                        Tela.imprimirTabuleiro(partida.tab, posicoesPossives);
+                        Tela.imprimirTabuleiro(partida.tab, posicoesPossiveis);
 
                         Console.WriteLine();
                         Console.Write("Destino: ");
